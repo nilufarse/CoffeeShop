@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="logoAndmenu">
+        <section class="header">
+            <div class="logo-img">
+                <a href="" class="logo-link">
+                    <img class="logo" src="../Photo/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="menu">
+                <a href="../Index/Home.html">Home</a>
+                <a id="first" href="../Index/OurMenu.html">Our Menu</a>
+                <a href="../Index/About.html">About</a>
+                <a href="../Index/Gallery.html">Gallery</a>
+                <a href="../Index/Contact.html">Contact</a>
+                <a href="../Index/Order.html">Order</a>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="Abouts">
+            <div class="about-container">
+                <div class="abouts">
+                    <h2 class="about-title-header">Get Delivery
+                    </h2>
+                </div>
+            </div>
+    </section>
+            <div class="drinkcarda">
+                <div class="row col-md-12">
+                    <div class="card-drink-1 col-md-3">
+                        <div class="card-body">
+                            <img class="drinkimg" src="../Photo/Cappuccino.png" alt="">
+                            <p class="text-drink">$ 4.20</p>
+                            <p class="text-drink1">Cappuccino</p>
+                            <p class="text-drink2">Lorem ipsum dolor sit amet,<br>consectetur adipiscing.
+                            </p>
+                            <a class="btn btn-square basket-btn" href=""><i class="fa fa-shopping-cart"></i>Get delivery</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="drinkcarda">
+                <div class="row">
+                    <div class="contacts-info">
+                        <div class="contactinfos">
+                            <div class="messaggeinfo">
+                                <input type="text" id="first01" class="messaggee-text" placeholder="First Name" required=""
+                                    aria-invalid="false">
+                                <label for="first01" class="name-text"></label>
+                            </div>
+                            <div class="messaggeinfo">
+                                <input type="text" id="last01" class="messaggee-text" placeholder="Last Name" required=""
+                                    aria-invalid="false">
+                                <label for="last01" class="name-text"></label>
+                            </div>
+                            <div class="messaggeinfo">
+                                <input type="text" asp-for="Order.Address" id="message01" class="messaggee-text" placeholder="Your Address"
+                                       required="">
+                                <label for="message01" class="message-text"></label>
+                            </div>
+                            <div class="messaggeinfo">
+                                <input type="text" asp-for="Order.Description" id="message01" class="messaggee-text" placeholder="Your Description"
+                                       required="">
+                                <input type="hidden" asp-for="Order.ProductId" id="message01" class="messaggee-text" placeholder="Your Address"
+                                       value="@Model.Product.Id">
+                                <label for="message01" class="message-text"></label>
+                            </div>
+                            <div class="messaggeinfo">
+                                <input type="number" asp-for="Order.Count" id="message01" class="messaggee-text" placeholder="Count"
+                                       required="">
+                                <label for="message01" class="message-text"></label>
+                            </div>
+                            <div class="sendinfo">
+                                <button type="submit" class="buttontext1">Get Delivered</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <section class="Footer">
+            <hr class="hr-footer">
+            <div class="footer-container">
+                <div class="row">
+                    <div class="card-footer-header col-sm-12 d-flex">
+                        <div class="card-footer-title col-sm-4">
+                            <h2 class="footer-title">About us</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                                ullamcorper mattis, pulvinar dapibus leo.</p>
+                        </div>
+                        <div class="card-footer-title1 col-sm-4">
+                            <h2 class="footer-title1">Contact</h2>
+                            <p>13 Fifth Avenue, New York, NY 10160<br>929-242-6868<br>contact@info.com</p>
+                        </div>
+                        <div class="card-footer-title1 col-sm-4">
+                            <h2 class="footer-title1">Opening hours</h2>
+                            <p>Mon – Fry — 8AM – 8PM<br>Saturday — 8AM – 4PM<br>Sunday — 8AM – 2PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-icons d-flex">
+                <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <hr class="hr-footer">
+            <p class="footer-p">Copyright © 2023 Coffee Shop | Powered by Coffee Shop</p>
+        </section>
+    </footer>
+</body>
+
+</html>
